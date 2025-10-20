@@ -8,7 +8,7 @@ export default function Header(){
     <header style={{background:'#000', color:'#fff', padding:'10px', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
       <div style={{color:'#ff7a00', fontWeight:700}}>iTelBet</div>
       <nav style={{display:'flex', gap:12, alignItems:'center'}}>
-        <Link to="/lobby" style={{color:'#fff'}}>Lobby</Link>
+        <Link to="/lobby" style={{color:'#fff'}}>PP</Link>
         {user ? (
           <>
             <div>Hi, {user.full_name}</div>

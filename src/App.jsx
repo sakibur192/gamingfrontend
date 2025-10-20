@@ -28,6 +28,7 @@ import Login from './pages/Login';
 import Lobby from './pages/Lobby';
 import FastSpin from './pages/FastSpin';
 import Profile from './pages/Profile';
+import PPGames from './pages/pp';
 
 export default function App() {
   return (
@@ -37,7 +38,7 @@ export default function App() {
         <Route path="/" element={<FastSpin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/lobby" element={<FastSpin />} />
+        <Route path="/lobby" element={<PPGames />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
