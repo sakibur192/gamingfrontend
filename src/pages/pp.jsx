@@ -25,11 +25,11 @@ export default function PP() {
       const res = await axios.post("https://backend-tw4p.onrender.com/api/pp/getGameUrl", {
         gameId: game.gameID,
         playerId,
-        currency: "USD",
+        currency: "BDT",
         platform: "WEB",
         language: "en",
         playMode: "REAL",
-        country: "US",
+        country: "BAN",
       });
 
       if (res.data?.gameURL) {
@@ -46,11 +46,17 @@ export default function PP() {
   return (
     <div style={{ background: "#0d0d0d", color: "white", minHeight: "100vh", overflow: "hidden" }}>
       <style>{`
+              html, body {
+                margin: 0;
+                padding: 0;
+               ✅ ensures nothing can scroll sideways */
+               }
+
         .page-container {
           display: flex;
           flex-direction: column;
           height: 100vh;
-          width:100vw ;
+          width:100% ;
           overflow: hidden;
         }
 
@@ -70,7 +76,7 @@ export default function PP() {
           padding: 10px;
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-          gap: 10px;
+          gap: 20px;
           justify-content: center;
           align-content: start;
         }
@@ -126,7 +132,7 @@ export default function PP() {
         .iframe-container {
           width: 100%;
           height: 100vh;
-          width:100vw;
+          width:100%;
           display: flex;
           flex-direction: column;
         }

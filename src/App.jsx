@@ -29,16 +29,20 @@ import Lobby from './pages/Lobby';
 import FastSpin from './pages/FastSpin';
 import Profile from './pages/Profile';
 import PPGames from './pages/pp';
+import EvoGames from './pages/Evo';
+
 
 export default function App() {
   return (
+   
     <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<FastSpin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/lobby" element={<PPGames />} />
+        <Route path="/lobby" element={<EvoGames />} />
+        <Route path="/pp" element={<PPGames />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
